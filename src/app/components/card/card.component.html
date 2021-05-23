@@ -1,0 +1,32 @@
+<mat-card class="card" *ngIf="!(myfact && !toggleLike) " >
+<div     >
+        <!-- <img class="md-avatar" style="border-radius: 50%; border: 1px solid black;height:200px!important;width:auto!important;" [src]="CatImageUrl.url" /> -->
+        <!-- <img mat-card-image [src]="CatImageUrl.url"> -->
+        <mat-card-content >
+          <div class="font-color">
+              <p>
+            {{CatFact.text}}
+        </p>
+          </div>
+        </mat-card-content>
+</div>
+
+
+<mat-card-actions>
+        <button mat-icon-button 
+              
+            class="grey"
+            background-color="transparent"
+            background="none"
+            (click)="enableDisableRule()"
+            [ngClass]="toggleLike ? 'blue' : 'grey' " >
+        
+                    <mat-icon font-size="50px" >favorite</mat-icon>
+        </button>
+        <!-- <mat-icon>favorite</mat-icon></button> -->
+    </mat-card-actions>   
+
+        <!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+        </mat-card-actions> -->
+</mat-card>

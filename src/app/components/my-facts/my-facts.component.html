@@ -1,0 +1,26 @@
+
+<div class="back">
+<div align-self="text-center" class="container text-center">
+        <div color="grey"  class="row"> 
+            <div class="container">
+                
+                <input class="form-control" type="text" name="search" [(ngModel)]="searchText" (keyup)="getFactList()" autocomplete="off" placeholder=" 🔍 What The Cat...Would you like to know?">
+            </div>
+        </div>
+    </div>
+    <span layout="row"><hr flex/></span>
+    <span layout="row" *ngIf="factlist.length === 0" padding-left="5%">No Results Found for : {{uid}}</span>
+    <div class="font-color" >
+        
+            <mat-grid-list cols="6" rowHeight="250px" gutterSize="50" >
+                    <mat-grid-tile
+                        *ngFor="let fact of factlist | filter:searchText"
+                        [style.background]="transparent"
+                        [colspan]="3"
+                        [rowspan]="1">
+                        
+                        <app-card [CatFact]="fact" [toggle]="true"  [myuid]="uid" [myfact]="true"></app-card>
+                    </mat-grid-tile>
+            </mat-grid-list>
+    </div>
+</div>

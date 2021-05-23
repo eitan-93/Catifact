@@ -1,0 +1,56 @@
+.card {
+    /* position: absolute; */
+    max-width: /*500%*/700px;
+    width : /*460%*/500px;
+    height: /*200%*/100px;
+    justify-content: center;
+    background: none;
+    background-color : transparent;
+    border: transparent!important;
+    margin:"0em";
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    overflow: hidden;
+    
+  }
+  
+  .font-color {  
+  position: absolute;
+   overflow: auto;
+    box-sizing: border-box;                                                                                 
+    color: black;
+        right: 0;
+    top: 55px;
+    width: 95%;
+    height: 80%;
+    font-size : 130%/*24px*/;
+  }
+  .header-image {
+    background-size: cover;
+  }
+
+  .grey {
+    color: grey;
+    background: none;
+    position: absolute;
+    top: 5%/*15px*/; 
+    right: 2%/*15px*/;
+    border:transparent;
+    outline: none;
+    font-size:120%/*36px*/;
+    }
+
+  .blue {
+    color: rgb(56, 86, 218);
+    background:none;
+    position: absolute;
+    top: 5%/*15px*/; 
+    right: 2%/*15px*/;
+    border:transparent;
+    outline: none;
+    font-size: 120%/*36px*/;
+  }    

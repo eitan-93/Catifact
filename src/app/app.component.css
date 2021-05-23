@@ -1,0 +1,15 @@
+.back {
+    /* background-image: url("../../cat-back.jpg"); */
+    background-color: #85a7d3;
+    background-size: cover;
+    /* position: absolute; */
+    /* padding: 20px; */
+    /* width: 100%; */
+   }
+
+html {
+    background: #85a7d3;
+    margin: 0;
+    height: 100%;
+    width : 100%
+  }
